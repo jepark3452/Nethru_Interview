@@ -16,8 +16,9 @@ public class SoundEXTest {
 	}
 	
 	@Test
-	public void testConverNameOne() throws Exception {
+	public void testConvertNameOne() throws Exception {
 		assertEquals("a", se.convertName("a"));
+		assertEquals("b", se.convertName("b"));
 	}
 	
 }
