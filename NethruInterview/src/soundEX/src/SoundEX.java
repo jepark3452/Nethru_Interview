@@ -5,13 +5,9 @@ public class SoundEX {
 	public String convertName(String inputName) {
 		String result = "";
 		
-		if(inputName.length() == 2) {
-			result += inputName.charAt(0);
-			result += getCode(inputName.charAt(1));
-		}
-		
-		if(inputName.length() == 1) {
-			result += inputName.charAt(0);
+		result += inputName.charAt(0);
+		for(int i=1; i < inputName.length(); i++) {
+			result += getCode(inputName.charAt(i));
 		}
 		
 		return result;

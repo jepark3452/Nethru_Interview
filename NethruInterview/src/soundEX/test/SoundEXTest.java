@@ -27,7 +27,12 @@ public class SoundEXTest {
 		assertEquals("a1", se.convertName("ab"));
 		assertEquals("a2", se.convertName("ac"));
 		assertEquals("a3", se.convertName("ad"));
-		assertEquals("aa", se.convertName("aa"));	// 오류
+		assertEquals("aa", se.convertName("aa"));	
+	}
+	
+	@Test
+	public void testConvertNameThree() throws Exception {
+		assertEquals("a12", se.convertName("abc"));
 	}
 	
 }
