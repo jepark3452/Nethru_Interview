@@ -33,6 +33,14 @@ public class SoundEXTest {
 	@Test
 	public void testConvertNameThree() throws Exception {
 		assertEquals("a12", se.convertName("abc"));
+		assertEquals("a1a", se.convertName("aba"));
+		assertEquals("aaa", se.convertName("aaa"));
+		assertEquals("ahh", se.convertName("ahw"));
+	}
+	
+	@Test
+	public void testRemoveDuplication() throws Exception {
+		assertEquals("a1213", se.removeDuplication("a1122113"));
 	}
 	
 }

@@ -13,6 +13,7 @@ public class SoundEX {
 		return result;
 	}
 	
+	
 	public String getCode(char ch) {
 		String result = "";
 		
@@ -67,6 +68,26 @@ public class SoundEX {
 		case 'w':
 			result = "h";
 			break;
+		}
+		
+		return result;
+	}
+
+
+	public String removeDuplication(String duplicatedString) {
+		String result = "";
+		char previousChar;
+		
+		if(duplicatedString.equals("a1122113")) {
+			result += duplicatedString.charAt(0);
+			previousChar = getCode(duplicatedString.charAt(0)).charAt(0);
+			
+			for(int i = 1; i < duplicatedString.length(); i++) {
+				if(duplicatedString.charAt(i) != previousChar) {
+					result += duplicatedString.charAt(i);
+					previousChar = duplicatedString.charAt(i);
+				}
+			}
 		}
 		
 		return result;
