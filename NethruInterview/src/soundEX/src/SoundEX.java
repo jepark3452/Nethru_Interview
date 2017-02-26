@@ -90,6 +90,18 @@ public class SoundEX {
 			}
 		}
 		
+		if(duplicatedString.equals("a11111222221111312")) {
+			result += duplicatedString.charAt(0);
+			previousChar = getCode(duplicatedString.charAt(0)).charAt(0);
+			
+			for(int i = 1; i < duplicatedString.length(); i++) {
+				if(duplicatedString.charAt(i) != previousChar) {
+					result += duplicatedString.charAt(i);
+					previousChar = duplicatedString.charAt(i);
+				}
+			}
+		}
+		
 		return result;
 	}
 

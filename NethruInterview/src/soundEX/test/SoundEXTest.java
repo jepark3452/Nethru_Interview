@@ -41,6 +41,7 @@ public class SoundEXTest {
 	@Test
 	public void testRemoveDuplication() throws Exception {
 		assertEquals("a1213", se.removeDuplication("a1122113"));
+		assertEquals("a121312", se.removeDuplication("a11111222221111312"));
 	}
 	
 }
