@@ -23,8 +23,11 @@ public class SoundEXTest {
 	}
 	
 	@Test
-	public void testConverNameTwo() throws Exception {
+	public void testConvertNameTwo() throws Exception {
 		assertEquals("a1", se.convertName("ab"));
+		assertEquals("a2", se.convertName("ac"));
+		assertEquals("a3", se.convertName("ad"));
+		assertEquals("aa", se.convertName("aa"));	// 오류
 	}
 	
 }

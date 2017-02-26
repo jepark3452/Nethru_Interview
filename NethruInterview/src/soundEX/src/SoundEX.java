@@ -56,6 +56,21 @@ public class SoundEX {
 		case 'r':
 			result = "6";
 			break;
+		
+		// 모음처리
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+			result = "a";
+			break;
+		
+		// h,w 처리
+		case 'h':
+		case 'w':
+			result = "h";
+			break;
 		}
 		
 		return result;
